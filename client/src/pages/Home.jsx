@@ -25,9 +25,9 @@ const Home = () => {
                             <h1 className="head-text">
                                 LET'S
                                 <br className="xl:block hidden" />
-                                DO IT.
                             </h1>
                         </motion.div>
+
                         <motion.div {...headContentAnimation} className="flex flex-col gap-5">
                             <p
                                 className="maw-w-md font-normal text-gray-600 text-base">
