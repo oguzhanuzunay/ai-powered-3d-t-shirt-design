@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/3D-Tshirt-Design/",
+  base: "/projects/ai-powered-3d-t-shirt-design/",
 });
