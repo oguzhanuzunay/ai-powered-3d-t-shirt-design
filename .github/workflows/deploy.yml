@@ -37,6 +37,9 @@ jobs:
   deploy:
     name: Deploy
     needs: build
+    environment:
+      name: github-pages
+      url: ${{ github.repository_owner }}/projects/${{ github.repository }}
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
@@ -51,5 +54,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          destination_dir: './projects'
           publish_dir: ./dist
